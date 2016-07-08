@@ -101,6 +101,10 @@ set textwidth=80
 "disable the annoying beep sound
 set vb
 
+"on linux, if you press 'n' (next line) when vim has already reached the end of
+"the file, the screen splashes, that is quite annoying; disable it:
+set t_vb="" 
+
 "yuanguo: This variable controls whether a window has a status line. 
 "  0: A window never has a status line;
 "  1: If there are more than one windows, each has a status line; 
