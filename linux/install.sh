@@ -4,7 +4,7 @@ ctags --help 2>&1 | grep "command not found" > /dev/null 2>&1
 if [ $? -eq 0 ] ; then  #string "command not found" found, so ctags is not installed
     echo "ctags is not installed, thus install it..."
     yum -y install ctags
-    if $? -eq 0 ; then
+    if [ $? -eq 0 ] ; then
         echo "ctags is installed successfully"
     else
         echo "failed to install ctags"
@@ -19,7 +19,7 @@ cscope --help 2>&1 | grep "command not found" > /dev/null 2>&1
 if [ $? -eq 0 ] ; then  #string "command not found" found, so cscope is not installed
     echo "cscope is not installed, thus install it..."
     yum -y install cscope 
-    if $? -eq 0 ; then
+    if [ $? -eq 0 ] ; then
         echo "cscope is installed successfully"
     else
         echo "failed to install cscope"
@@ -34,7 +34,7 @@ unzip --help 2>&1 | grep "command not found" > /dev/null 2>&1
 if [ $? -eq 0 ] ; then  #string "command not found" found, so unzip is not installed
     echo "unzip is not installed, thus install it..."
     yum -y install unzip 
-    if $? -eq 0 ; then
+    if [ $? -eq 0 ] ; then
         echo "unzip is installed successfully"
     else
         echo "failed to install unzip"
