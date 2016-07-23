@@ -74,4 +74,3 @@ cp -f vimrc ~/.vimrc
 cp -f rebuild_workspace.sh /home/
 
 echo alias vi=\'vim\' >> ~/.bashrc
-source ~/.bashrc
