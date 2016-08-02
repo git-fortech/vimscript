@@ -33,6 +33,7 @@ find -L . -type f | grep \
     -e "\.hpp$"          \
     -e "\.java$"         \
     -e "\.Java$"         \
+    -e "\.lua$"          \
     > .cscope.files
 
 #mac os doesn't have cscope, use the one I installed;
